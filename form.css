@@ -1,0 +1,609 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bg1 {
+    background-color: pink;
+}
+
+.bg2 {
+    background-color: salmon;
+}
+
+body {
+    background-color: hsl(206, 94%, 87%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    width: 800px;
+    aspect-ratio: 1.6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#leftside {
+    position: relative;
+}
+
+#leftside img {
+    height: 470px;
+}
+
+.iconsdiv {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+
+/*style of the things which are upon img starts here*/
+
+.leftsidedivs {
+    display: flex;
+    padding: 5px;
+    gap: 15px;
+}
+
+.stepleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    color: White;
+    font-weight: 600px;
+    font-size: 18px;
+}
+
+.stepleft1 {
+    background-color: white;
+    color: black;
+}
+
+.stepright {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+    color: white;
+    gap: 3px;
+}
+
+.stepright :nth-child(1) {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.stepright :nth-child(2) {
+    margin: 0px;
+    font-weight: 700;
+}
+
+
+/*style of the things which are upon img ends here*/
+
+
+/* step 1 starts here*/
+
+h1 {
+    color: hsl(213, 96%, 18%);
+}
+
+#rightside1 {
+    padding: 30px 70px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+
+}
+
+#rightside1 div p {
+    font-weight: 500;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.personal-info p {
+    color: grey;
+}
+
+.personal-info p,
+.personal-info h1 {
+    margin: 0px;
+}
+
+
+.detailsfirstdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: hsl(213, 96%, 18%);
+    font-size: 14px;
+}
+
+#fieldrequired1,
+#fieldrequired2,
+#fieldrequired3 {
+    color: red;
+    visibility: hidden;
+}
+
+.details input {
+    width: 410px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.details input:focus {
+    border: 1px solid blue;
+}
+
+.buttons1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons1 button {
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px 20px;
+
+}
+
+.buttons1 p {
+    margin: 10px;
+    color: grey;
+    visibility: hidden;
+}
+
+/* step 1 ends here*/
+
+/* step 2 starts here*/
+
+#rightside2 {
+    padding: 30px 70px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+}
+
+.planselect h1,
+.planselect p {
+    margin: 15px;
+
+}
+
+.plans {
+    display: flex;
+    gap: 20px;
+}
+
+.plans img {
+    height: 40px;
+}
+
+#plan1,
+#plan2,
+#plan3 {
+    border: 1px solid hsl(229, 24%, 87%);
+    height: 180px;
+    width: 120px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+#plan1 {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(231, 100%, 99%);
+}
+
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.texts p:nth-child(1) {
+    color: hsl(213, 96%, 18%);
+    font-weight: 600;
+    margin: 0px;
+}
+
+.texts p:nth-child(2) {
+    color: grey;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.texts p:nth-child(3) {
+    color: hsl(213, 96%, 18%);
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.onoff {
+    background-color: hsl(231, 100%, 99%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#monthly {
+    color: grey;
+}
+
+#yearly {
+    color: hsl(213, 96%, 18%);
+}
+
+#onoffbg {
+    background-color: blue;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 2.5px;
+    display: flex;
+    justify-content: end;
+
+}
+
+#onoffbtn {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+
+.buttons2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons2 button {
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px 20px;
+
+}
+
+.buttons2 p {
+    margin: 10px;
+    color: grey;
+
+}
+
+/* step 2 ends here*/
+
+/* step 3 starts here*/
+
+#rightside3 {
+    padding: 30px 70px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+
+.addons {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.addons p {
+    color: grey;
+}
+
+.addons p,
+.addons h1 {
+    margin: 0px;
+}
+
+.addonsdiv {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addonsdiv p {
+    margin: 0px;
+}
+
+#addon1,
+#addon2,
+#addon3 {
+    display: flex;
+    Flex-direction: row;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 7px;
+}
+
+#addon1,
+#addon2 {
+    border-color: blue;
+    background-color: hsl(217, 100%, 97%);
+}
+
+
+#checkbox1,
+#checkbox2,
+#checkbox3 {
+    transform: scale(1.5);
+}
+
+#addon12,
+#addon22,
+#addon32 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#addon12 p:nth-child(1),
+#addon22 p:nth-child(1),
+#addon32 p:nth-child(1) {
+    color: hsl(213, 96%, 18%);
+    font-weight: 600;
+}
+
+#addon12 p:nth-child(2),
+#addon22 p:nth-child(2),
+#addon32 p:nth-child(2) {
+    color: grey;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#addon13,
+#addon23,
+#addon33 {
+    color: hsl(243, 100%, 62%);
+}
+
+.buttons3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons3 button {
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+.buttons3 p {
+    margin: 10px;
+    color: grey;
+}
+
+
+/*                 */
+
+#rightside4 {
+    padding: 30px 70px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+
+.finishingup {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.finishingup p {
+    color: grey;
+}
+
+.finishingup p,
+.finishingup h1 {
+    margin: 0px;
+}
+
+#summary {
+    gap: 0px;
+    flex: 1;
+}
+
+#pricingdiv {
+    padding: 20px;
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 8px;
+}
+
+#regularprice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+}
+
+#regularprice div p {
+    margin: 0px;
+}
+
+#arcade {
+    color: hsl(213, 96%, 18%);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#changebtn {
+    color: grey;
+    text-decoration: underline;
+}
+
+#regprice {
+    color: hsl(213, 96%, 18%);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+#serviceprice {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+#serviceprice p {
+    margin: 0px;
+}
+
+#serviceprice div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#service {
+    color: grey;
+}
+
+#price {
+    font-size: 14px;
+}
+
+#totaldiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#totalsub {
+    margin: 0;
+    color: grey;
+}
+
+#totalprice {
+    margin: 0;
+    color: blue;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.buttons4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons4 button {
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+.buttons4 p {
+    margin: 10px;
+    color: grey;
+}
+
+#rightside5 {
+    padding: 30px 70px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    display: none;
+}
+
+#rightside5 p {
+    font-weight: 500;
+    color: grey;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+#rightside5 h1 {
+    font-weight: 600;
+
+}
+
+#rightside5 img {
+    width: 100px;
+}
+
+
+
+

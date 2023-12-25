@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step form</title>
+
+    <link rel="stylesheet" href="form.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR STARTS -->
+
+        <div id="leftside">
+
+            <img src="images/bg-sidebar-desktop.svg" alt="sidebar.bg">
+            <div class="iconsdiv">
+
+                <div class="leftsidedivs">
+                    <div id="sidebarnum1" class="stepleft stepleft1">1</div>
+                    <div class="stepright">
+                        <p>STEP 1</p>
+                        <p>YOUR INFO</p>
+                    </div>
+                </div>
+
+                <div class="leftsidedivs">
+                    <div id="sidebarnum2" class="stepleft">2</div>
+                    <div class="stepright">
+                        <p>STEP 2</p>
+                        <p>SELECT PLAN</p>
+                    </div>
+                </div>
+
+                <div class="leftsidedivs">
+                    <div id="sidebarnum3" class="stepleft">3</div>
+                    <div class="stepright">
+                        <p>STEP 3</p>
+                        <p>ADD-ONS</p>
+                    </div>
+                </div>
+
+                <div class="leftsidedivs">
+                    <div id="sidebarnum4" class="stepleft">4</div>
+                    <div class="stepright">
+                        <p>STEP 4</p>
+                        <p>SUMMARY</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SIDEBAR ENDS -->
+
+        <!-- Step 1 start -->
+
+        <div id="rightside">
+
+            <div id="rightside1">
+                <div class="personal-info">
+                    <h1>Personal info</h1>
+                    <p>Please provide your name, email address, and phone number.</p>
+                </div>
+
+                <div class="details">
+                    <div class="detailsfirstdiv">
+                        <p>Name</p>
+                        <p id="fieldrequired1"></p>
+                    </div>
+                    <input type="text" placeholder="e.g. Stephen King" id="nameinput">
+                </div>
+
+                <div class="details">
+                    <div class="detailsfirstdiv">
+                        <p>Email Address</p>
+                        <p id="fieldrequired2"></p>
+                    </div>
+                    <input type="text" placeholder="e.g. stephenking@lorem.com" id="emailinput">
+
+                </div>
+
+                <div class="details">
+                    <div class="detailsfirstdiv">
+                        <p>Phone Number</p>
+                        <p id="fieldrequired3">
+                        </p>
+                    </div>
+
+                    <input type="number" placeholder="e.g. +1 234 567 890" id="numberinput">
+                </div>
+                <div class="buttons1 ">
+                    <p>Go back</p>
+                    <button id="nextstep1">Next Step</button>
+                </div>
+            </div>
+
+
+            <!-- Step 1 end -->
+
+            <!-- Step 2 start -->
+            <div id="rightside2">
+                <div class="planselect">
+                    <h1>Select your plan</h1>
+                    <p>You have the option of monthly or yearly billing.</p>
+                </div>
+
+                <div class="plans">
+                    <div id="plan1">
+                        <img src="images/icon-arcade.svg" alt="arcade icon" />
+                        <div class="texts">
+                            <p>Arcade</p>
+                            <p>$9/mo</p>
+                            <p id="free">2 months free</p>
+                        </div>
+
+                    </div>
+
+                    <div id="plan2">
+                        <img src="images/icon-advanced.svg" alt="advance icon" />
+                        <div class="texts">
+                            <p>Advanced</p>
+                            <p>$12/mo</p>
+                            <p id="free">2 months free</p>
+                        </div>
+
+                    </div>
+
+                    <div id="plan3">
+                        <img src="images/icon-pro.svg" alt="pro icon">
+                        <div class="texts">
+                            <p>Pro</p>
+                            <p>$15/mo</p>
+                            <p id="free">2 months free</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="onoff">
+                    <p id="monthly">Monthly</p>
+                    <div id="onoffbg">
+                        <div id="onoffbtn"></div>
+                    </div>
+                    <p id="yearly">Yearly</p>
+                </div>
+
+                <div class="buttons2">
+                    <p id="goback1">Go back</p>
+                    <button id="nextstep2">Next Step</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+
+        <div id="rightside3">
+
+            <div class="addons">
+                <h1>Pick add-ons</h1>
+                <p>Add-ons help enhance your gaming experience.</p>
+            </div>
+
+            <div class="addonsdiv">
+
+                <div id="addon1">
+                    <div id="addon11"> <input type="checkbox" id="checkbox1" checked></div>
+                    <div id="addon12">
+                        <p>Online service</p>
+                        <p>Access to multiplayer games</p>
+                    </div>
+                    <div id="addon13"> +$1/mo</div>
+                </div>
+
+                <div id="addon2">
+                    <div id="addon21">
+                        <input type="checkbox" id="checkbox2" checked>
+                    </div>
+                    <div id="addon22">
+                        <p>Larger storage</p>
+                        <p>Extra 1TB of cloud save</p>
+                    </div>
+                    <div id="addon23"> +$2/mo</div>
+                </div>
+
+                <div id="addon3">
+                    <div id="addon31"> <input type="checkbox" id="checkbox3"></div>
+                    <div id="addon32">
+                        <p>Customizable Profile</p>
+                        <p>Custom theme on your profile</p>
+                    </div>
+                    <div id="addon33"> +$2/mo</div>
+                </div>
+            </div>
+            <div class="buttons3">
+                <p id="goback2">Go back</p>
+                <button id="nextstep3">Next step</button>
+            </div>
+
+
+        </div>
+
+
+        <!-- Step 3 end -->
+
+        <!-- Step 4 start -->
+        <div id="rightside4">
+
+            <div class="finishingup">
+                <h1>Finishing up</h1>
+                <p>Double-check everything looks OK before confirming.</p>
+            </div>
+
+            <div id="summary">
+                <div id="pricingdiv">
+                    <div id="regularprice">
+                        <div>
+                            <p id="arcade">Arcade(<span id="subs">Yearly</span>)</p>
+                            <p id="changebtn">change</p>
+                        </div>
+                        <div id="regprice">$90/yr</div>
+                    </div>
+                    <div id="serviceprice">
+                        <div>
+                            <!--            <p id="service">online service</p>
+                            <p id="price">+1$/mo</p>
+                        </div>
+                        <div>
+ <p id="service">online service</p>
+                            <p id="price">+1$/mo</p>
+                 -->
+                        </div>
+                    </div>
+                </div>
+                <div id="totaldiv">
+                    <p id="totalsub">Total (per month)</p>
+                    <p id="totalprice">$12/mo</p>
+                </div>
+            </div>
+
+
+            <div class="buttons4">
+                <p id="goback3">Go back</p>
+                <button id="nextstep4">Confirm</button>
+            </div>
+        </div>
+
+
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+
+        <div id="rightside5">
+            <img src="images/icon-thank-you.svg">
+            <h1>Thank you!</h1>
+            <p>Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free
+                to email us at support@loremgaming.com.</p>
+        </div>
+    </div>
+
+
+
+    <!-- Step 5 end -->
+
+</body>
+<script src="form.js"></script>
+
+</html>
